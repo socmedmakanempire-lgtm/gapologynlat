@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gapology",
+  "pages_build_output_dir": "./public",
+  "compatibility_date": "2026-11-03",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gapology",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

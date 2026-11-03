@@ -1,0 +1,14 @@
+{
+  "name":"gapology-cloudflare",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{
+    "dev":"wrangler pages dev public",
+    "deploy":"wrangler pages deploy public --project-name gapology",
+    "migrate:local":"wrangler d1 migrations apply gapology --local",
+    "migrate:remote":"wrangler d1 migrations apply gapology --remote",
+    "test":"node --test tests/*.test.mjs"
+  },
+  "devDependencies":{"wrangler":"^4.0.0"}
+}
